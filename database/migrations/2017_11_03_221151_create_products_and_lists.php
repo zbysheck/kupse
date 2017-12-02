@@ -52,7 +52,7 @@ class CreateProductsAndLists extends Migration
     public function down()
     {
         Schema::dropIfExists('products');
-        Schema::dropIfExists('lists');
+        Schema::dropIfExists('wish_lists');
         Schema::dropIfExists('items');
     }
 }
