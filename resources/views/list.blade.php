@@ -7,6 +7,9 @@
     <link rel='stylesheet prefetch' href='http://codepen.io/ChynoDeluxe/pen/eJPeEL'>
 
     <link rel="stylesheet" href="css/style.css">
+
+    <meta property="og:description">super fajna lista prezentów</head>
+    <meta property="og:title">Pysiolista</head>
 </head>
 <body>
     @foreach($products as $product)
