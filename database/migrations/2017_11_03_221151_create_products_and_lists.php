@@ -17,9 +17,10 @@ class CreateProductsAndLists extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('url')->unique();
-            $table->string('description');
-            $table->string('image');
-            $table->string('site_name');
+            $table->string('description')->nullable();
+            $table->string('image')->nullable();
+            $table->string('site_name')->nullable();
+            $table->string('price')->nullable();
             $table->timestamps();
         });
 
