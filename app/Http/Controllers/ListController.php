@@ -29,7 +29,7 @@ class ListController extends Controller
             'url' => $object->url,
         ]);
         $product->title = $object->title;
-        $product->description = $object->description;
+        $product->description = str_limit($object->description, 250);
         $product->image = $object->images[0]->url;
         $product->site_name = $object->siteName;
         $product->save();
